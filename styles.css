@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+.regular {
+  font-family: Poppins;
+}
+body {
+    justify-items: center;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding : 5px 5px;
+    border: none;
+    border-radius: 10px;
+    width: 60%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.descr{
+    font-size: 18px;
+
+}
+
+.container {
+    text-align: center;
+    background-color: grey;
+    width: 50%;
+    border-radius: 12px;
+    border: none;
+};
