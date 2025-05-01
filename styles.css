@@ -14,60 +14,92 @@
   font-family: Poppins;
 }
 body {
-    justify-items: center;
-    background: linear-gradient(to bottom, #e0f7fa, #b3e5fc); 
-    height: 95vh;
+  justify-items: center;
+  background: linear-gradient(to bottom, #e0f7fa, #b3e5fc);
+  height: 95vh;
 }
-.containers{
+.containers {
   text-align: center;
   background-color: transparent;
   border-radius: 22px;
   padding: 7px 0px;
   border: 2px solid black;
 }
-.social-link{
+.social-link {
   color: black;
   background-color: white;
   border-radius: 15px;
   padding: 5px;
 }
 
-.text-small{
+.text-small {
   font-size: 17px;
   margin-top: 10px;
 }
-.text-waitlist{
+.text-waitlist {
   line-height: 0%;
   margin-bottom: 30px;
 }
-.descr{
-    font-size: 18px;
-
+.descr {
+  font-size: 18px;
 }
-.input{
-    width: 60%;
-    background-color: transparent;
-    padding: 5px 5px;
-    border: none;
-    margin-bottom: 10px;
-    font-size: 20px;
-    border-bottom: 1px solid black;
+.input {
+  width: 60%;
+  background-color: transparent;
+  padding: 5px 5px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid black;
 }
-.btn{
-    background-color: black;
-    color: white;
-    padding : 5px 5px;
-    border: none;
-    border-radius: 10px;
-    width: 20%;
-    margin-bottom: 10px;
-    font-size: 20px;
+.btn {
+  background-color: black;
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 10px;
+  width: 20%;
+  margin-bottom: 10px;
+  font-size: 20px;
   padding: 5px 5px;
 }
 .container {
-    text-align: center;
-    width: 50%;
-    border-radius: 12px;
-    border: none;
-    background-color: transparent;
-};
+  text-align: center;
+  width: 50%;
+  border-radius: 12px;
+  border: none;
+  background-color: transparent;
+}
+
+.input-btn-container {
+  display: flex;
+  flex-direction: row; /* Default: input and button side by side */
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Add spacing between input and button */
+}
+
+@media (max-width: 780px) {
+  .input-btn-container {
+    flex-direction: column; /* Stack input and button vertically */
+  }
+  .container {
+    width: 95%; /* Adjust width for mobile devices */
+  }
+  .input {
+    width: 90%;
+  }
+  .btn {
+    width: 90%;
+  }
+  .containers{
+    padding: 2px 5px;
+  }
+  .text-waitlist {
+    line-height: 100%;
+    margin-bottom: 25px;
+  }
+  body{
+    height: 100vh;
+  }
+}
