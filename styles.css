@@ -1,35 +1,73 @@
 @font-face {
   font-family: Poppins;
-  src: url("../fonts/Poppins-Regular.ttf");
+  src: url("./font/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Cabinet;
+  src: url("./font/CabinetGrotesk-Regular.otf");
 }
 
+.regular-Cabinet {
+  font-family: Cabinet;
+}
 .regular {
   font-family: Poppins;
 }
 body {
     justify-items: center;
+    background: linear-gradient(to bottom, #e0f7fa, #b3e5fc); 
+    height: 95vh;
+}
+.containers{
+  text-align: center;
+  background-color: transparent;
+  border-radius: 22px;
+  padding: 7px 0px;
+  border: 2px solid black;
+}
+.social-link{
+  color: black;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
 }
 
+.text-small{
+  font-size: 17px;
+  margin-top: 10px;
+}
+.text-waitlist{
+  line-height: 0%;
+  margin-bottom: 30px;
+}
+.descr{
+    font-size: 18px;
+
+}
+.input{
+    width: 60%;
+    background-color: transparent;
+    padding: 5px 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
 .btn{
     background-color: black;
     color: white;
     padding : 5px 5px;
     border: none;
     border-radius: 10px;
-    width: 60%;
+    width: 20%;
     margin-bottom: 10px;
     font-size: 20px;
+  padding: 5px 5px;
 }
-
-.descr{
-    font-size: 18px;
-
-}
-
 .container {
     text-align: center;
-    background-color: grey;
     width: 50%;
     border-radius: 12px;
     border: none;
+    background-color: transparent;
 };
